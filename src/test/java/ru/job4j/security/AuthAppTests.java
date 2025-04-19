@@ -1,4 +1,4 @@
-package ru.job4j.spring_security_6;
+package ru.job4j.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
