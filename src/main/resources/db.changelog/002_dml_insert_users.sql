@@ -1,3 +1,3 @@
-insert into users (name, password, role) values ('user', '123', 'ROLE_USER');
-insert into users (name, password, role) values ('admin', '123', 'ROLE_ADMIN');
-insert into users (name, password, role) values ('engineer', '123', 'ROLE_ENGINEER');
+insert into users (name, password, role) values ('user', '$2a$05$Bvu/3vs1jbNCGrAuN3tNTud.CszDHakn87UPFl1FB.wgrNuoSPtUq', 'ROLE_USER');
+insert into users (name, password, role) values ('admin', '$2a$05$Bvu/3vs1jbNCGrAuN3tNTud.CszDHakn87UPFl1FB.wgrNuoSPtUq', 'ROLE_ADMIN');
+insert into users (name, password, role) values ('engineer', '$2a$05$Bvu/3vs1jbNCGrAuN3tNTud.CszDHakn87UPFl1FB.wgrNuoSPtUq', 'ROLE_ENGINEER');

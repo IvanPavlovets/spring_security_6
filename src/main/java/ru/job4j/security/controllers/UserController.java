@@ -1,18 +1,22 @@
 package ru.job4j.security.controllers;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.job4j.security.service.UserService;
 
+/**
+ * Класс контроллера с простыми конечными точками,
+ * доступными по различным правам доступа:
+ * /welcome — страница доступна всем без авторизации;
+ * /users — страница для пользователей с правами ROLE_USER в базе данных;
+ * /admins — страница для пользователей с правами ROLE_ADMIN в базе данных;;
+ * /all — для всех, но после авторизации.
+ */
 @RestController
 @RequestMapping("/users")
-@RequiredArgsConstructor
 public class UserController {
 
-    //private final UserService service;
 
     @GetMapping("/welcome")
     public String welcome() {
