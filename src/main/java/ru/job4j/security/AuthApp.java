@@ -19,7 +19,7 @@ public class AuthApp {
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(AuthApp.class, args);
-        System.out.println("Go to http://localhost:8080/welcome");
+        System.out.println("Go to http://localhost:8080/users/welcome");
 	}
 
 }
